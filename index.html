@@ -1,59 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sarah Barkhouse – Coming Soon</title>
-  <!-- Google Font: Inter -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BARKHOUSE</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
-  <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J93VDMTPPL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    h1 {
+      font-size: clamp(3rem, 10vw, 10rem);
+      letter-spacing: 0.1em;
+      margin: 0;
+      font-weight: 700;
+    }
 
-      gtag('config', 'G-J93VDMTPPL');
-    </script>
+    p {
+      font-size: 1rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-top: 1rem;
+      color: #aaa;
+    }
 
+    a {
+      margin-top: 2rem;
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-
-    <header>
-      <h1>SARAH BARKHOUSE</h1>
-      <p class="tagline">Coming Soon…</p>
-    </header>
-
-    <main>
-      <form class="signup-form" action="https://formspree.io/f/meokwzqq" method="POST">
-        <input type="email" name="email" placeholder="example@email.com" required>
-        <button type="submit">Notify Me</button>
-      </form>
-
-      <section class="gallery">
-        <div class="gallery-item">
-          <img src="Thailand-Pai.jpeg" alt="Artist working at desk">
-        </div>
-        <div class="gallery-item">
-          <img src="Cherry-Drink.jpeg" alt="Cherry drink illustration on desk">
-        </div>
-        <div class="gallery-item">
-          <img src="Finished thailand series.jpg" alt="Artist smiling in front of artwork">
-        </div>
-        <div class="gallery-item">
-          <img src="Thailand-Phuket.jpeg" alt="Artist smiling in front of artwork">
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <a href="mailto:me@sarahbarkhouse.com">me@sarahbarkhouse.com</a>
-    </footer>
-
-  </div>
+  <h1>BARKHOUSE</h1>
+  <p>Art by Sarah Barkhouse</p>
+  <a href="https://www.instagram.com/sarahbarkhouse" target="_blank">View Instagram</a>
 </body>
 </html>
