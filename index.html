@@ -31,10 +31,12 @@
 
     /* Logo styling */
     img {
-      width: 260px;
-      max-width: 80%;
+      width: calc(100% - 20px); /* full width minus 10px padding each side */
+      max-width: 1200px; /* keeps it from stretching too large on desktops */
       height: auto;
       margin: 20px 0 30px 0;
+      padding: 0 10px;
+      box-sizing: border-box;
     }
 
     /* Links */
