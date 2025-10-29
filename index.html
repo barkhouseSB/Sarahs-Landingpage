@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BARKHOUSE</title>
   <style>
     body {
       margin: 0;
-      background-color: black;
-      color: white;
+      background-color: white;
+      color: black;
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       height: 100vh;
       display: flex;
@@ -16,42 +16,50 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      letter-spacing: 2px;
+    }
+
+    .top-text {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      line-height: 1.6;
+    }
+
+    .top-text a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .top-text a:hover {
+      text-decoration: underline;
     }
 
     h1 {
-      font-size: clamp(3rem, 10vw, 10rem);
-      letter-spacing: 0.1em;
-      margin: 0;
+      font-size: 6rem;
       font-weight: 700;
+      letter-spacing: 6px;
+      margin: 0;
     }
 
-    p {
-      font-size: 1rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-top: 1rem;
-      color: #aaa;
-    }
-
-    a {
-      margin-top: 2rem;
-      color: white;
-      text-decoration: none;
-      border: 1px solid white;
-      padding: 0.6rem 1.2rem;
-      font-size: 0.9rem;
-      transition: all 0.3s ease;
-    }
-
-    a:hover {
-      background-color: white;
-      color: black;
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+      }
+      .top-text {
+        font-size: 0.8rem;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="top-text">
+    <p>LAUNCHING 2025<br>
+    <a href="mailto:me@sarahbarkhouse.com">ME@SARAHBARKHOUSE.COM</a><br>
+    <a href="https://www.instagram.com/sarah_barkhouse/" target="_blank">@SARAH_BARKHOUSE</a></p>
+  </div>
   <h1>BARKHOUSE</h1>
-  <p>Art by Sarah Barkhouse</p>
-  <a href="https://www.instagram.com/sarahbarkhouse" target="_blank">View Instagram</a>
 </body>
 </html>
+
